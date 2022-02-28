@@ -8,7 +8,7 @@ class Game:
     __instance = None
 
     @staticmethod
-    def inst(player2):
+    def inst(player2=None):
         if Game.__instance == None:
             Game.__instance = Game(player2)
         return Game.__instance
